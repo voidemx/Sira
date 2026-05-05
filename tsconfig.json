@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "removeComments": true,
+        "noEmitOnError": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strict": true,
+        "noImplicitOverride": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "types": ["node"],
+        "paths": {
+            "#sira/client*": ["./src/client/*"],
+            "#sira/config/*": ["./src/config/*"],
+            "#sira/middlewares/*": ["./src/middlewares/*"],
+        }
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
